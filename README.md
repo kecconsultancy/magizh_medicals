@@ -1,0 +1,1 @@
+# magizh_medicals
