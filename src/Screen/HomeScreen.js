@@ -1,3 +1,4 @@
+import "../style.css"
 import React from 'react'
 import AboutSection from '../Components/AboutSection'
 import BlogPost from '../Components/BlogPost'

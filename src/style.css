@@ -71,12 +71,12 @@ section {
 /* Slider */
 .slide-1 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/cover1.jpg);
+    url(./images/cover1.jpg);
 }
 
 .slide-2 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/cover2.jpg);
+    url(./images/cover2.jpg);
 }
 
 #heroSlider h6::after,
@@ -144,7 +144,7 @@ section {
 /* Features */
 #features {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/cover2.jpg);
+    url(./images/cover2.jpg);
 }
 
 .feature {
@@ -259,7 +259,7 @@ section {
 /* Footer */
 footer {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../images/cover3.jpg);
+    url(./images/cover3.jpg);
   padding-top: 120px;
   padding-bottom: 30px;
 }
