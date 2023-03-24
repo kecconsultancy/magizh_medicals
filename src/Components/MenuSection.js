@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import MenusCard from './MenusCard'
+import React, { useState } from 'react';
+import MenusCard from './MenusCard';
 const image1 = require('../images/1.webp');
 const image2 = require('../images/2.webp');
 const image3 = require('../images/3.webp');
@@ -33,36 +33,38 @@ const image30 = require('../images/30.webp');
 const image31 = require('../images/31.webp');
 const image32 = require('../images/32.avif');
 
-
-
 function MenuSection() {
   // https://www.1mg.com/categories/fitness-supplements-5
   const [ItemData4, setItemData4] = useState([
-
     {
       image: image24,
       title: 'Sugar Free Gold Low Calorie Sweetener',
-      description: 'Ideal substitute as one pellet, in sweetness, is equivalent to a teaspoon of sugar  ',
+      description:
+        'Ideal substitute as one pellet, in sweetness, is equivalent to a teaspoon of sugar  ',
     },
     {
       image: image25,
       title: 'Sensodyne Fresh Mint Sensitive Toothpaste',
-      description: 'Sensodyne toothpaste for daily protection of teeth against sensitivity ',
+      description:
+        'Sensodyne toothpaste for daily protection of teeth against sensitivity ',
     },
     {
       image: image26,
       title: 'Navratna Cool Ayurvedic Oil',
-      description: 'Multi-benefit cooling oil that is enriched with herbal extracts  ',
+      description:
+        'Multi-benefit cooling oil that is enriched with herbal extracts  ',
     },
     {
       image: image27,
-      title: 'Tata 1mg Wrist Support Universal, Wrist Brace with Thumb Support for Optimal Support and Compression',
+      title:
+        'Tata 1mg Wrist Support Universal, Wrist Brace with Thumb Support for Optimal Support and Compression',
       description: 'A universal-sized wrist brace with a thumb opening ',
     },
     {
       image: image28,
       title: 'Tata 1mg Biotin Gummies for Healthy and Happy Hair',
-      description: 'Free from gluten, milk, soy, nut, gelatin, preservatives and artificial flavour  ',
+      description:
+        'Free from gluten, milk, soy, nut, gelatin, preservatives and artificial flavour  ',
     },
     {
       image: image29,
@@ -80,48 +82,57 @@ function MenuSection() {
       description:
         'Zinc, Calcium and Vitamin D Capsule for Immunity, Energy, Overall Health',
     },
-
-  ])
-  const [ItemData3, setItemData3] = useState([{
-    image: image16,
-    title: 'Tata 1mg Probiotics 30 Billion CFUs+ Capsule with Prebiotic Fibre',
-    description: 'Contains 30 billion CFU plus 14 live probiotic strains and prebiotic fibre  ',
-  },
-  {
-    image: image17,
-    title: 'Tata 1mg Pain Relief Spray for Lower Back Pain, Joint Pain, Neck Pain & Sprain',
-    description: 'Provides quick and long-lasting relief from pain ',
-  },
-  {
-    image: image18,
-    title: 'Tata 1mg Medicated First Aid Dressing - Washproof, Bandages Pack of 20',
-    description: 'Advanced protection for cuts and scrapes ',
-  },
-  {
-    image: image19,
-    title: 'Tata 1mg Adult Diaper Tape Style Medium',
-    description: 'Anti-bacterial core helps prevent rashes ',
-  },
-  {
-    image: image20,
-    title: 'Tata 1mg Vitamin D3 Capsule',
-    description: 'Helps in better calcium absorption in the body  ',
-  },
-  {
-    image: image21,
-    title: 'Tata 1mg Elderly Care Combo for Eye & Heart Health, Memory Support, Immunity Wellness, Cholestrol & Blood Pressure Management',
-    description: 'Information about Tata 1mg Elderly Care Combo for Eye & Heart Health, Memory Support, Immunity Wellness, Cholestrol & Blood Pressure Management ',
-  },
-  {
-    image: image22,
-    title: 'Tata 1mg Multivitamin Gummies with Zinc, Magnesium and Folic Acid for Immunity & Energy',
-    description: 'Antioxidant properties help neutralize free radicals and promote growth ',
-  },
-  {
-    image: image23,
-    title: 'Protinex Health and Nutritional Drink Rich Chocolate',
-    description: 'High in protein and contains ten immunonutrients  ',
-  },])
+  ]);
+  const [ItemData3, setItemData3] = useState([
+    {
+      image: image16,
+      title:
+        'Tata 1mg Probiotics 30 Billion CFUs+ Capsule with Prebiotic Fibre',
+      description:
+        'Contains 30 billion CFU plus 14 live probiotic strains and prebiotic fibre  ',
+    },
+    {
+      image: image17,
+      title:
+        'Tata 1mg Pain Relief Spray for Lower Back Pain, Joint Pain, Neck Pain & Sprain',
+      description: 'Provides quick and long-lasting relief from pain ',
+    },
+    {
+      image: image18,
+      title:
+        'Tata 1mg Medicated First Aid Dressing - Washproof, Bandages Pack of 20',
+      description: 'Advanced protection for cuts and scrapes ',
+    },
+    {
+      image: image19,
+      title: 'Tata 1mg Adult Diaper Tape Style Medium',
+      description: 'Anti-bacterial core helps prevent rashes ',
+    },
+    {
+      image: image20,
+      title: 'Tata 1mg Vitamin D3 Capsule',
+      description: 'Helps in better calcium absorption in the body  ',
+    },
+    {
+      image: image21,
+      title:
+        'Tata 1mg Elderly Care Combo for Eye & Heart Health, Memory Support, Immunity Wellness, Cholestrol & Blood Pressure Management',
+      description:
+        'Information about Tata 1mg Elderly Care Combo for Eye & Heart Health, Memory Support, Immunity Wellness, Cholestrol & Blood Pressure Management ',
+    },
+    {
+      image: image22,
+      title:
+        'Tata 1mg Multivitamin Gummies with Zinc, Magnesium and Folic Acid for Immunity & Energy',
+      description:
+        'Antioxidant properties help neutralize free radicals and promote growth ',
+    },
+    {
+      image: image23,
+      title: 'Protinex Health and Nutritional Drink Rich Chocolate',
+      description: 'High in protein and contains ten immunonutrients  ',
+    },
+  ]);
   const [ItemData2, setItemData2] = useState([
     {
       image: image9,
@@ -151,17 +162,17 @@ function MenuSection() {
     {
       image: image14,
       title: 'Himalaya Septilin Tablet',
-      description: 'Relieves allergic disorders and alleviates respiratory conditions ',
+      description:
+        'Relieves allergic disorders and alleviates respiratory conditions ',
     },
     {
       image: image15,
       title: 'Himalaya Liv.52 Syrup',
-      description: 'It protects the liver from chemically-induced hepatotoxicity  ',
+      description:
+        'It protects the liver from chemically-induced hepatotoxicity  ',
     },
-
-  ])
+  ]);
   const [ItemsData, setItemsData] = useState([
-
     {
       image: image1,
       title: 'Tata 1mg Apple Cider Vinegar Probiotic Plus',
@@ -170,31 +181,38 @@ function MenuSection() {
     {
       image: image2,
       title: 'Tata 1mg Salmon Omega 3 Fish Oil Capsule',
-      description: 'It promotes heart health by decreasing triglycerides and increasing levels of good cholesterol',
+      description:
+        'It promotes heart health by decreasing triglycerides and increasing levels of good cholesterol',
     },
     {
       image: image3,
-      title: 'Tata 1mg Womens Multivitamin Veg Tablet with Zinc, Vitamin C, Calcium, Vitamin D and Iron, Support Immunity, Bones & Overall Health',
+      title:
+        'Tata 1mg Womens Multivitamin Veg Tablet with Zinc, Vitamin C, Calcium, Vitamin D and Iron, Support Immunity, Bones & Overall Health',
       description: 'Supports bone, skin and eye health ',
     },
     {
       image: image4,
       title: 'Tata 1mg Apple Cider Vinegar Probiotic Plus',
-      description: 'Tata 1mg Apple Cider Vinegar Probiotic Plus - Raw Unfiltered Unpasteurized with The Mother ',
+      description:
+        'Tata 1mg Apple Cider Vinegar Probiotic Plus - Raw Unfiltered Unpasteurized with The Mother ',
     },
     {
       image: image5,
-      title: 'Tata 1mg Noni Juice Plus with Rich Antioxidant, Supports Joint Health and Immunity',
+      title:
+        'Tata 1mg Noni Juice Plus with Rich Antioxidant, Supports Joint Health and Immunity',
       description: 'Helps in improving the immunity level ',
     },
     {
       image: image6,
-      title: 'Tata 1mg Multivitamin Supreme, Zinc, Calcium and Vitamin D Capsule for Immunity, Energy, Overall Health',
-      description: 'A nutritional health supplement that helps to build your immunity ',
+      title:
+        'Tata 1mg Multivitamin Supreme, Zinc, Calcium and Vitamin D Capsule for Immunity, Energy, Overall Health',
+      description:
+        'A nutritional health supplement that helps to build your immunity ',
     },
     {
       image: image7,
-      title: 'Zingavita Sharp Eye Multivitamin Gummies for Kids (with Essential Eye Vitamins) Strawberry Mix',
+      title:
+        'Zingavita Sharp Eye Multivitamin Gummies for Kids (with Essential Eye Vitamins) Strawberry Mix',
       description: 'Supports eye health',
     },
     {
@@ -202,9 +220,7 @@ function MenuSection() {
       title: 'Lubistar 1% Eye Drop',
       description: 'burning, irritation, itching and redness ',
     },
-
   ]);
-
 
   return (
     <section id='menu' class='bg-light'>
@@ -313,9 +329,14 @@ function MenuSection() {
             aria-labelledby='pills-breakfast-tab'
             tabindex='0'
           >
-            <div class="row gy-4">
-              {ItemData2.map(el =>
-                <MenusCard imagePath={el.image} title={el.title} description={el.description}></MenusCard>)}
+            <div class='row gy-4'>
+              {ItemData2.map((el) => (
+                <MenusCard
+                  imagePath={el.image}
+                  title={el.title}
+                  description={el.description}
+                ></MenusCard>
+              ))}
             </div>
           </div>
 
@@ -326,11 +347,14 @@ function MenuSection() {
             aria-labelledby='pills-lunch-tab'
             tabindex='0'
           >
-            <div class="row gy-4">
-
-              {ItemData3.map(el =>
-                <MenusCard imagePath={el.image} title={el.title} description={el.description}></MenusCard>)}
-
+            <div class='row gy-4'>
+              {ItemData3.map((el) => (
+                <MenusCard
+                  imagePath={el.image}
+                  title={el.title}
+                  description={el.description}
+                ></MenusCard>
+              ))}
             </div>
           </div>
 
@@ -341,10 +365,14 @@ function MenuSection() {
             aria-labelledby='pills-dinner-tab'
             tabindex='0'
           >
-            <div class="row gy-4">
-              {ItemData4.map(el =>
-                <MenusCard imagePath={el.image} title={el.title} description={el.description}></MenusCard>)}
-
+            <div class='row gy-4'>
+              {ItemData4.map((el) => (
+                <MenusCard
+                  imagePath={el.image}
+                  title={el.title}
+                  description={el.description}
+                ></MenusCard>
+              ))}
             </div>
           </div>
         </div>
@@ -353,4 +381,4 @@ function MenuSection() {
   );
 }
 
-export default MenuSection
+export default MenuSection;
