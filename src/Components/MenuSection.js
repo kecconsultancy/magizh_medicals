@@ -237,7 +237,7 @@ function MenuSection() {
               aria-controls='pills-all'
               aria-selected='true'
             >
-              All Items
+              Tablets
             </button>
           </li>
 
@@ -252,7 +252,7 @@ function MenuSection() {
               aria-controls='pills-breakfast'
               aria-selected='true'
             >
-              Breakfast
+              Himalayan
             </button>
           </li>
 
@@ -267,7 +267,7 @@ function MenuSection() {
               aria-controls='pills-lunch'
               aria-selected='true'
             >
-              Lunch
+              Kits
             </button>
           </li>
 
@@ -282,7 +282,7 @@ function MenuSection() {
               aria-controls='pills-dinner'
               aria-selected='true'
             >
-              Dinner
+              Boosters
             </button>
           </li>
         </ul>
