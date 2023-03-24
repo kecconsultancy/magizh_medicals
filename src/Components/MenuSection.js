@@ -207,107 +207,111 @@ function MenuSection() {
 
 
   return (
-    <section id="menu" class="bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 intro-text">
+    <section id='menu' class='bg-light'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-12 intro-text'>
             <h1>Explore Our Medicines</h1>
             <p>
-              Medicine is the restoration of discordant elements, sickness is the discord of the elements infused into the living body.
+              Medicine is the restoration of discordant elements, sickness is
+              the discord of the elements infused into the living body.
             </p>
           </div>
         </div>
       </div>
 
-      <div class="container">
+      <div class='container'>
         <ul
-          class="nav nav-pills mb-4 justify-content-center"
-          id="pills-tab"
-          role="tablist"
+          class='nav nav-pills mb-4 justify-content-center'
+          id='pills-tab'
+          role='tablist'
         >
-          <li class="nav-item" role="presentation">
+          <li class='nav-item' role='presentation'>
             <button
-              class="nav-link active"
-              id="pills-all-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-all"
-              type="button"
-              role="tab"
-              aria-controls="pills-all"
-              aria-selected="true"
+              class='nav-link active'
+              id='pills-all-tab'
+              data-bs-toggle='pill'
+              data-bs-target='#pills-all'
+              type='button'
+              role='tab'
+              aria-controls='pills-all'
+              aria-selected='true'
             >
               All Items
             </button>
           </li>
 
-          <li class="nav-item" role="presentation">
+          <li class='nav-item' role='presentation'>
             <button
-              class="nav-link"
-              id="pills-breakfast-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-breakfast"
-              type="button"
-              role="tab"
-              aria-controls="pills-breakfast"
-              aria-selected="true"
+              class='nav-link'
+              id='pills-breakfast-tab'
+              data-bs-toggle='pill'
+              data-bs-target='#pills-breakfast'
+              type='button'
+              role='tab'
+              aria-controls='pills-breakfast'
+              aria-selected='true'
             >
               Breakfast
             </button>
           </li>
 
-          <li class="nav-item" role="presentation">
+          <li class='nav-item' role='presentation'>
             <button
-              class="nav-link"
-              id="pills-lunch-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-lunch"
-              type="button"
-              role="tab"
-              aria-controls="pills-lunch"
-              aria-selected="true"
+              class='nav-link'
+              id='pills-lunch-tab'
+              data-bs-toggle='pill'
+              data-bs-target='#pills-lunch'
+              type='button'
+              role='tab'
+              aria-controls='pills-lunch'
+              aria-selected='true'
             >
               Lunch
             </button>
           </li>
 
-          <li class="nav-item" role="presentation">
+          <li class='nav-item' role='presentation'>
             <button
-              class="nav-link"
-              id="pills-dinner-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-dinner"
-              type="button"
-              role="tab"
-              aria-controls="pills-dinner"
-              aria-selected="true"
+              class='nav-link'
+              id='pills-dinner-tab'
+              data-bs-toggle='pill'
+              data-bs-target='#pills-dinner'
+              type='button'
+              role='tab'
+              aria-controls='pills-dinner'
+              aria-selected='true'
             >
               Dinner
             </button>
           </li>
         </ul>
 
-        <div class="tab-content" id="pills-tabContent">
+        <div class='tab-content' id='pills-tabContent'>
           <div
-            class="tab-pane fade show active"
-            id="pills-all"
-            role="tabpanel"
-            aria-labelledby="pills-all-tab"
-            tabindex="0"
+            class='tab-pane fade show active'
+            id='pills-all'
+            role='tabpanel'
+            aria-labelledby='pills-all-tab'
+            tabindex='0'
           >
-            <div class="row gy-4">
-              {ItemsData.map(el =>
-                <MenusCard imagePath={el.image} title={el.title} description={el.description}></MenusCard>)}
-
-
+            <div class='row gy-4'>
+              {ItemsData.map((el) => (
+                <MenusCard
+                  imagePath={el.image}
+                  title={el.title}
+                  description={el.description}
+                ></MenusCard>
+              ))}
             </div>
           </div>
 
           <div
-            class="tab-pane fade show"
-            id="pills-breakfast"
-            role="tabpanel"
-            aria-labelledby="pills-breakfast-tab"
-            tabindex="0"
+            class='tab-pane fade show'
+            id='pills-breakfast'
+            role='tabpanel'
+            aria-labelledby='pills-breakfast-tab'
+            tabindex='0'
           >
             <div class="row gy-4">
               {ItemData2.map(el =>
@@ -316,11 +320,11 @@ function MenuSection() {
           </div>
 
           <div
-            class="tab-pane fade show"
-            id="pills-lunch"
-            role="tabpanel"
-            aria-labelledby="pills-lunch-tab"
-            tabindex="0"
+            class='tab-pane fade show'
+            id='pills-lunch'
+            role='tabpanel'
+            aria-labelledby='pills-lunch-tab'
+            tabindex='0'
           >
             <div class="row gy-4">
 
@@ -331,11 +335,11 @@ function MenuSection() {
           </div>
 
           <div
-            class="tab-pane fade show"
-            id="pills-dinner"
-            role="tabpanel"
-            aria-labelledby="pills-dinner-tab"
-            tabindex="0"
+            class='tab-pane fade show'
+            id='pills-dinner'
+            role='tabpanel'
+            aria-labelledby='pills-dinner-tab'
+            tabindex='0'
           >
             <div class="row gy-4">
               {ItemData4.map(el =>
@@ -346,10 +350,10 @@ function MenuSection() {
         </div>
       </div>
     </section>
-
-  )
+  );
 }
 
 export default MenuSection
 
 
+x
