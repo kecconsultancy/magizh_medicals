@@ -354,6 +354,3 @@ function MenuSection() {
 }
 
 export default MenuSection
-
-
-x
