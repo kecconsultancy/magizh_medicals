@@ -5,7 +5,8 @@ function Navbar() {
     <nav class="navbar navbar-expand-lg bg-white shadow py-3 sticky-top">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src={require("../images/Qrispy_dark.svg")} alt="" />
+          MAGIZH MEDICALS
+          {/* <img src={require("../images/medicals.png")} alt="" /> */}
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,14 +31,11 @@ function Navbar() {
               <a class="nav-link" href="#team">Team</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#reservation">Reservation</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#blog">Blog</a>
+              <a class="nav-link" href="#reservation">Reviews</a>
             </li>
 
           </ul>
-          <a href="#" class="btn btn-brand">Order Online</a>
+          <a href="#" class="btn btn-brand">Place order</a>
         </div>
       </div>
     </nav>
