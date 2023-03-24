@@ -6,7 +6,7 @@ function AboutSection() {
       <div class="container">
         <div class="row gy-4 align-items-center">
           <div class="col-lg-5">
-            <img src={require("../images/about_new.png")} alt="" />
+            <img src={require("../images/syringe-1884784_1920.jpg")} alt="" />
           </div>
           <div class="col-lg-5">
             <h1>About us</h1>

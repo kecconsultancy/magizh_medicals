@@ -13,6 +13,7 @@ import ReviewSection from '../Components/ReviewSection'
 import TeamSection from '../Components/TeamSection'
 
 
+
 //     < !--Reservation -->
 
 //     < !--Insta Posts-- >
@@ -28,10 +29,10 @@ function HomeScreen() {
     <MenuSection></MenuSection>
     <FeautureSection></FeautureSection>
     <TeamSection></TeamSection>
-    <ReviewSection></ReviewSection>
+    {/* <ReviewSection></ReviewSection> */}
     <ResevationSection></ResevationSection>
-    <InstaPost></InstaPost>
-    <BlogPost></BlogPost>
+    {/* <InstaPost></InstaPost> */}
+    {/* <BlogPost></BlogPost> */}
     <FooterSection></FooterSection>
 
   </>

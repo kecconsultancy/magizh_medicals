@@ -1,15 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
+import MenusCard from './MenusCard'
+const image = require("../images/TATA1mg.webp")
+const image1 = require("../images/1669400288-0753.avif")
 
 function MenuSection() {
+  // https://www.1mg.com/categories/fitness-supplements-5
+  const [ItemsData, setItemsData] = useState([
+    {
+      image: image,
+      title: "Tata 1mg Multivitamin Supreme",
+      description: "Zinc, Calcium and Vitamin D Capsule for Immunity, Energy, Overall Health"
+    },
+    {
+      image: image1,
+      title: "Tata 1mg Multivitamin Supreme",
+      description: "Zinc, Calcium and Vitamin D Capsule for Immunity, Energy, Overall Health"
+    }
+  ])
+
+
   return (
     <section id="menu" class="bg-light">
       <div class="container">
         <div class="row">
           <div class="col-12 intro-text">
-            <h1>Explore Our Menu</h1>
+            <h1>Explore Our Medicines</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Recusandae sint temporibus natus optio eveniet nobis accusantium?
+              Medicine is the restoration of discordant elements, sickness is the discord of the elements infused into the living body.
             </p>
           </div>
         </div>
@@ -91,198 +108,10 @@ function MenuSection() {
             tabindex="0"
           >
             <div class="row gy-4">
-              <div class="col-lg-3 col-sm-6">
-                <div class="menu-item bg-white shadow-on-hover">
-                  <img src={require("../images/item_8.jpg")} alt="" />
-                  <div class="menu-item-content p-4">
-                    <div>
-                      <span>Rated(5.4)</span>
-                      <span class="stars">
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-half-fill"></i>
-                      </span>
-                    </div>
-                    <h5 class="mt-1 mb-2">
-                      <a href="#">Fudgy Chewy Brownies</a>
-                    </h5>
-                    <p class="small">
-                      Baked salmon to a fresh salad made with chickpeas,
-                      arugula, herbs and olives
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-sm-6">
-                <div class="menu-item bg-white shadow-on-hover">
-                  <img src={require("../images/item_1.jpg")} alt="" />
-                  <div class="menu-item-content p-4">
-                    <div>
-                      <span>Rated(5.4)</span>
-                      <span class="stars">
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-half-fill"></i>
-                      </span>
-                    </div>
-                    <h5 class="mt-1 mb-2">
-                      <a href="#">Fudgy Chewy Brownies</a>
-                    </h5>
-                    <p class="small">
-                      Baked salmon to a fresh salad made with chickpeas,
-                      arugula, herbs and olives
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-sm-6">
-                <div class="menu-item bg-white shadow-on-hover">
-                  <img src={require("../images/item_2.jpg")} alt="" />
-                  <div class="menu-item-content p-4">
-                    <div>
-                      <span>Rated(5.4)</span>
-                      <span class="stars">
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-half-fill"></i>
-                      </span>
-                    </div>
-                    <h5 class="mt-1 mb-2">
-                      <a href="#">Fudgy Chewy Brownies</a>
-                    </h5>
-                    <p class="small">
-                      Baked salmon to a fresh salad made with chickpeas,
-                      arugula, herbs and olives
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-sm-6">
-                <div class="menu-item bg-white shadow-on-hover">
-                  <img src={require("../images/item_3.jpg")} alt="" />
-                  <div class="menu-item-content p-4">
-                    <div>
-                      <span>Rated(5.4)</span>
-                      <span class="stars">
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-half-fill"></i>
-                      </span>
-                    </div>
-                    <h5 class="mt-1 mb-2">
-                      <a href="#">Fudgy Chewy Brownies</a>
-                    </h5>
-                    <p class="small">
-                      Baked salmon to a fresh salad made with chickpeas,
-                      arugula, herbs and olives
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-sm-6">
-                <div class="menu-item bg-white shadow-on-hover">
-                  <img src={require("../images/item_4.jpg")} alt="" />
-                  <div class="menu-item-content p-4">
-                    <div>
-                      <span>Rated(5.4)</span>
-                      <span class="stars">
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-half-fill"></i>
-                      </span>
-                    </div>
-                    <h5 class="mt-1 mb-2">
-                      <a href="#">Fudgy Chewy Brownies</a>
-                    </h5>
-                    <p class="small">
-                      Baked salmon to a fresh salad made with chickpeas,
-                      arugula, herbs and olives
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-sm-6">
-                <div class="menu-item bg-white shadow-on-hover">
-                  <img src={require("../images/item_5.jpg")} alt="" />
-                  <div class="menu-item-content p-4">
-                    <div>
-                      <span>Rated(5.4)</span>
-                      <span class="stars">
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-half-fill"></i>
-                      </span>
-                    </div>
-                    <h5 class="mt-1 mb-2">
-                      <a href="#">Fudgy Chewy Brownies</a>
-                    </h5>
-                    <p class="small">
-                      Baked salmon to a fresh salad made with chickpeas,
-                      arugula, herbs and olives
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-sm-6">
-                <div class="menu-item bg-white shadow-on-hover">
-                  <img src={require("../images/item_6.jpg")} alt="" />
-                  <div class="menu-item-content p-4">
-                    <div>
-                      <span>Rated(5.4)</span>
-                      <span class="stars">
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-half-fill"></i>
-                      </span>
-                    </div>
-                    <h5 class="mt-1 mb-2">
-                      <a href="#">Fudgy Chewy Brownies</a>
-                    </h5>
-                    <p class="small">
-                      Baked salmon to a fresh salad made with chickpeas,
-                      arugula, herbs and olives
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-sm-6">
-                <div class="menu-item bg-white shadow-on-hover">
-                  <img src={require("../images/item_7.jpg")} alt="" />
-                  <div class="menu-item-content p-4">
-                    <div>
-                      <span>Rated(5.4)</span>
-                      <span class="stars">
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-fill"></i>
-                        <i class="ri-star-half-fill"></i>
-                      </span>
-                    </div>
-                    <h5 class="mt-1 mb-2">
-                      <a href="#">Fudgy Chewy Brownies</a>
-                    </h5>
-                    <p class="small">
-                      Baked salmon to a fresh salad made with chickpeas,
-                      arugula, herbs and olives
-                    </p>
-                  </div>
-                </div>
-              </div>
+              {ItemsData.map(el =>
+                <MenusCard imagePath={el.image} title={el.title} description={el.description}></MenusCard>)}
+
+
             </div>
           </div>
 

@@ -10,11 +10,11 @@ function HeroSection() {
           >
             <div class="row justify-content-center">
               <div class="col-lg-8">
-                <h6 class="text-white">WELCOME TO QRISPY</h6>
+                <h6 class="text-white">WELCOME TO</h6>
                 <h1 class="display-1 my-3 fw-bold text-white">
-                  Char-grilled and flavor-filled
+                  MAGIZH MEDICALS
                 </h1>
-                <a href="#" class="btn btn-brand">Reservation</a>
+                <a href="#about" class="btn btn-brand">Know More</a>
               </div>
             </div>
           </div>
@@ -26,11 +26,11 @@ function HeroSection() {
           >
             <div class="row justify-content-center">
               <div class="col-lg-8">
-                <h6 class="text-white">WELCOME TO QRISPY</h6>
+                <h6 class="text-white">WELCOME TO</h6>
                 <h1 class="display-1 my-3 fw-bold text-white">
-                  Fresh & Tasty Food
+                  MAGIZH MEDICALS
                 </h1>
-                <a href="#" class="btn btn-brand">Reservation</a>
+                <a href="#about" class="btn btn-brand">Know More</a>
               </div>
             </div>
           </div>
