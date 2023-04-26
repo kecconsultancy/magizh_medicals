@@ -1,6 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function Navbar() {
+  const [isLogin, setisLogin] = useState(false);
+  const ShowLogin = (e) => {
+    console.log("Show Login");
+    setisLogin(true)
+  }
+  const ShowPlaceOrder = (e) => {
+    console.log("Show place order");
+    setisLogin(false)
+  }
   return (
     <nav class="navbar navbar-expand-lg bg-white shadow py-3 sticky-top">
       <div class="container">
@@ -35,7 +44,8 @@ function Navbar() {
             </li>
 
           </ul>
-          <a href="#" class="btn btn-brand">Place order</a>
+          {!isLogin ? <div onClick={ShowLogin} class="btn btn-brand">Login</div> : <div onClick={ShowPlaceOrder} class="btn btn-brand">Place order</div>}
+
         </div>
       </div>
     </nav>

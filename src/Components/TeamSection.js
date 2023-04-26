@@ -18,10 +18,10 @@ function TeamSection() {
             <div
               class="team-member px-4 py-5 border shadow-on-hover text-center"
             >
-              <img src={require("../images/team_01.png")} alt="" />
+              <img src={require("../images/istockphoto-1209654046-612x612.jpg")} alt="" />
               <div class="team-member-content">
-                <h4 class="mb-0 mt-4">Jon Doe</h4>
-                <p class="mb-0">Main Chef</p>
+                <h4 class="mb-0 mt-4">Karuppusamy</h4>
+                <p class="mb-0">Owner</p>
               </div>
             </div>
           </div>
@@ -29,10 +29,10 @@ function TeamSection() {
             <div
               class="team-member px-4 py-5 border shadow-on-hover text-center"
             >
-              <img src={require("../images/team_02.png")} alt="" />
+              <img src={require("../images/istockphoto-1209654046-612x612.jpg")} alt="" />
               <div class="team-member-content">
-                <h4 class="mb-0 mt-4">Jon Doe</h4>
-                <p class="mb-0">Main Chef</p>
+                <h4 class="mb-0 mt-4">Gowtham</h4>
+                <p class="mb-0">Co-founder</p>
               </div>
             </div>
           </div>
@@ -40,10 +40,10 @@ function TeamSection() {
             <div
               class="team-member px-4 py-5 border shadow-on-hover text-center"
             >
-              <img src={require("../images/team_03.png")} alt="" />
+              <img src={require("../images/istockphoto-1209654046-612x612.jpg")} alt="" />
               <div class="team-member-content">
-                <h4 class="mb-0 mt-4">Jon Doe</h4>
-                <p class="mb-0">Main Chef</p>
+                <h4 class="mb-0 mt-4">Priya</h4>
+                <p class="mb-0">Sales Girl</p>
               </div>
             </div>
           </div>
@@ -51,10 +51,10 @@ function TeamSection() {
             <div
               class="team-member px-4 py-5 border shadow-on-hover text-center"
             >
-              <img src={require("../images/team_01.png")} alt="" />
+              <img src={require("../images/istockphoto-1209654046-612x612.jpg")} alt="" />
               <div class="team-member-content">
-                <h4 class="mb-0 mt-4">Jon Doe</h4>
-                <p class="mb-0">Main Chef</p>
+                <h4 class="mb-0 mt-4">Dharani</h4>
+                <p class="mb-0">Sales Execetive</p>
               </div>
             </div>
           </div>

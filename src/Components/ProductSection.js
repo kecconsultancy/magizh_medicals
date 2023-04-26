@@ -33,7 +33,8 @@ const image30 = require('../images/30.webp');
 const image31 = require('../images/31.webp');
 const image32 = require('../images/32.avif');
 
-function MenuSection() {
+function ProductSection() {
+
   // https://www.1mg.com/categories/fitness-supplements-5
   const [ItemData4, setItemData4] = useState([
     {
@@ -221,99 +222,111 @@ function MenuSection() {
       description: 'burning, irritation, itching and redness ',
     },
   ]);
+  // const [Data, SetDate] = useState([{
+  //   tag: "Tablets",
+  //   data: ItemsData,
 
+  // },
+  // {
+  //   tag: "Himalayan",
+  //   data: ItemData2,
+  //   // active: true
+  // },
+  // {
+  //   tag: "Kits",
+  //   data: ItemData3
+  // },
+  // {
+  //   tag: "Boosters",
+  //   data: ItemData4
+  // },
+  // ])
+  const [Tags, setTag] = useState(["Tablets", "Himalayan", "Kits", "Boosters"]);
+  const [DataShow, setDataShow] = useState(ItemData3)
+  const changeData = (tag) => {
+    console.log("change");
+    console.log(tag);
+  }
   return (
-    <section id='menu' class='bg-light'>
-      <div class='container'>
-        <div class='row'>
-          <div class='col-12 intro-text'>
+    <section id='menu' className='bg-light'>
+      <div className='container'>
+        <div className='row'>
+          <div className='col-12 intro-text'>
             <h1>Explore Our Medicines</h1>
             <p>
               Medicine is the restoration of discordant elements, sickness is
               the discord of the elements infused into the living body.
             </p>
+            <div id="search">
 
+              <i className="ri-search-line search"></i>
+
+              <input
+                type="text"
+                id="input"
+                name="name"
+                placeholder="Search"
+              />
+
+            </div>
           </div>
         </div>
       </div>
 
-      <div class='container'>
+      <div className='container'>
         <ul
-          class='nav nav-pills mb-4 justify-content-center'
-          id='pills-tab'
-          role='tablist'
+          className='nav nav-pills mb-4 justify-content-center'
+
+        // role='tablist'
         >
-          <li class='nav-item' role='presentation'>
-            <button
-              class='nav-link active'
-              id='pills-all-tab'
-              data-bs-toggle='pill'
-              data-bs-target='#pills-all'
-              type='button'
-              role='tab'
-              aria-controls='pills-all'
-              aria-selected='true'
-            >
-              Tablets
-            </button>
-          </li>
-
-          <li class='nav-item' role='presentation'>
-            <button
-              class='nav-link'
-              id='pills-breakfast-tab'
-              data-bs-toggle='pill'
-              data-bs-target='#pills-breakfast'
-              type='button'
-              role='tab'
-              aria-controls='pills-breakfast'
-              aria-selected='true'
-            >
-              Himalayan
-            </button>
-          </li>
-
-          <li class='nav-item' role='presentation'>
-            <button
-              class='nav-link'
-              id='pills-lunch-tab'
-              data-bs-toggle='pill'
-              data-bs-target='#pills-lunch'
-              type='button'
-              role='tab'
-              aria-controls='pills-lunch'
-              aria-selected='true'
-            >
-              Kits
-            </button>
-          </li>
-
-          <li class='nav-item' role='presentation'>
-            <button
-              class='nav-link'
-              id='pills-dinner-tab'
-              data-bs-toggle='pill'
-              data-bs-target='#pills-dinner'
-              type='button'
-              role='tab'
-              aria-controls='pills-dinner'
-              aria-selected='true'
-            >
-              Boosters
-            </button>
-          </li>
+          {
+            Tags.map((el) => {
+              return <li key={el} className='nav-item' role='presentation'>
+                <button
+                  className={`nav-link `}
+                  // id={`pills-${el.tag}`}
+                  type='button'
+                  role='tab'
+                  onClick={changeData(el)}
+                >
+                  {el}
+                </button>
+              </li>
+            })
+          }
         </ul>
 
-        <div class='tab-content' id='pills-tabContent'>
+        <div className='tab-content' >
+          {/* {
+            Data.map((el) => {
+              return <div
+                className={`tab-pane fade show ${el.isActive ? 'active' : ''}`}
+                id={`pills-${el.tag}`}
+                role='tabpanel'
+                aria-labelledby={`pills-${el.tag}`}
+
+              >
+                <div className='row gy-4'>
+                  {el.data.map((el) => (
+                    <MenusCard
+                      imagePath={el.image}
+                      title={el.title}
+                      description={el.description}
+                    ></MenusCard>
+                  ))}
+                </div>
+              </div>
+            })
+          } */}
           <div
-            class='tab-pane fade show active'
-            id='pills-all'
+            className='tab-pane fade show active'
+            id='pills-breakfast'
             role='tabpanel'
             aria-labelledby='pills-all-tab'
             tabindex='0'
           >
-            <div class='row gy-4'>
-              {ItemsData.map((el) => (
+            <div className='row gy-4'>
+              {DataShow.map((el) => (
                 <MenusCard
                   imagePath={el.image}
                   title={el.title}
@@ -323,63 +336,12 @@ function MenuSection() {
             </div>
           </div>
 
-          <div
-            class='tab-pane fade show'
-            id='pills-breakfast'
-            role='tabpanel'
-            aria-labelledby='pills-breakfast-tab'
-            tabindex='0'
-          >
-            <div class='row gy-4'>
-              {ItemData2.map((el) => (
-                <MenusCard
-                  imagePath={el.image}
-                  title={el.title}
-                  description={el.description}
-                ></MenusCard>
-              ))}
-            </div>
-          </div>
 
-          <div
-            class='tab-pane fade show'
-            id='pills-lunch'
-            role='tabpanel'
-            aria-labelledby='pills-lunch-tab'
-            tabindex='0'
-          >
-            <div class='row gy-4'>
-              {ItemData3.map((el) => (
-                <MenusCard
-                  imagePath={el.image}
-                  title={el.title}
-                  description={el.description}
-                ></MenusCard>
-              ))}
-            </div>
-          </div>
 
-          <div
-            class='tab-pane fade show'
-            id='pills-dinner'
-            role='tabpanel'
-            aria-labelledby='pills-dinner-tab'
-            tabindex='0'
-          >
-            <div class='row gy-4'>
-              {ItemData4.map((el) => (
-                <MenusCard
-                  imagePath={el.image}
-                  title={el.title}
-                  description={el.description}
-                ></MenusCard>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
-    </section>
+    </section >
   );
 }
 
-export default MenuSection;
+export default ProductSection;
