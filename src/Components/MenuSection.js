@@ -378,6 +378,9 @@ function MenuSection() {
           </div>
         </div>
       </div>
+      <a href='./products' class='btn btn-brand'>
+        Explore Menu
+      </a>
     </section>
   );
 }

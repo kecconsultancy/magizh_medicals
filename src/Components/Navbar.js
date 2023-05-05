@@ -13,7 +13,7 @@ function Navbar() {
   return (
     <nav class="navbar navbar-expand-lg bg-white shadow py-3 sticky-top">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
           MAGIZH MEDICALS
           {/* <img src={require("../images/medicals.png")} alt="" /> */}
         </a>

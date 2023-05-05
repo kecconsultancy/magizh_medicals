@@ -36,7 +36,7 @@ function MenusCard(props) {
   // }, [])
 
   return (
-    <div class="col-lg-3 col-sm-6">
+    <div class="col-lg-3 col-sm-6" onClick={e => props.onClick(e)}>
 
       <div class="menu-item bg-white shadow-on-hover">
         <img src={props.imagePath

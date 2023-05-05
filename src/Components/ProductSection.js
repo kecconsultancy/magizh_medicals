@@ -3,9 +3,11 @@ import MenusCard from './MenusCard';
 import { collection, getDocs, doc, updateDoc } from "firebase/firestore";
 import { db } from '../firebase';
 import { image } from '../images';
+import { useNavigate } from 'react-router-dom';
 
 
 function ProductSection() {
+  const navigate = useNavigate();
   const [MasterCopy, setMasterCopy] = useState([])
   const [Tags, setTag] = useState([]);
   const [DataShow, setDataShow] = useState([])
@@ -25,6 +27,8 @@ function ProductSection() {
     for (const key of Object.keys(el.data)) {
       // console.log(el.data[key]);
       const tempData = el.data[key];
+      tempData.key = key
+
       // tempData.img = "sd"
       Data.push(tempData);
     }
@@ -39,10 +43,13 @@ function ProductSection() {
     const temp = await getDocs(ref).then(snap => {
 
       snap?.forEach((el) => {
+
         const mas = MasterCopy
         const tag = Tags
         const data = el?.data();
         const id = el.id;
+
+
         mas.push({ id: el.id, data })
         tag.push(id)
         setMasterCopy(mas)
@@ -147,14 +154,15 @@ function ProductSection() {
             aria-labelledby='pills-all-tab'
           // tabindex='0'
           >{
-              <div className='row gy-4'>
+              <div className='row gy-4' >
                 {DataShow.map((el) => (
                   <MenusCard
                     key={el.title}
-                    imagePath={"https://firebasestorage.googleapis.com/v0/b/magizhmedicals-6e897.appspot.com/o/images%2F6.webp?alt=media&token=541815fd-a885-43c7-a35d-dcf7da0060d4"}
+                    imagePath={el.image}
                     // imagePath={el.image}
                     title={el.title}
                     description={el.description}
+                    onClick={e => navigate(`/products/view/${el.tag}/${el.key}`)}
                   ></MenusCard>
                 ))}
               </div>

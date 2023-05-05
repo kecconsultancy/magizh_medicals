@@ -22,6 +22,7 @@ function TeamSection() {
               <div class="team-member-content">
                 <h4 class="mb-0 mt-4">Karuppusamy</h4>
                 <p class="mb-0">Owner</p>
+                <p class="mb-0">9442797912</p>
               </div>
             </div>
           </div>
@@ -33,10 +34,11 @@ function TeamSection() {
               <div class="team-member-content">
                 <h4 class="mb-0 mt-4">Gowtham</h4>
                 <p class="mb-0">Co-founder</p>
+                <p class="mb-0">9789637912</p>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6">
+          {/* <div class="col-lg-3 col-sm-6">
             <div
               class="team-member px-4 py-5 border shadow-on-hover text-center"
             >
@@ -57,7 +59,7 @@ function TeamSection() {
                 <p class="mb-0">Sales Execetive</p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
