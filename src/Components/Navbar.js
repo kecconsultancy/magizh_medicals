@@ -3,11 +3,11 @@ import React, { useState } from 'react'
 function Navbar() {
   const [isLogin, setisLogin] = useState(false);
   const ShowLogin = (e) => {
-    console.log("Show Login");
+    // console.log("Show Login");
     setisLogin(true)
   }
   const ShowPlaceOrder = (e) => {
-    console.log("Show place order");
+    // console.log("Show place order");
     setisLogin(false)
   }
   return (

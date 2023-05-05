@@ -1,5 +1,6 @@
 import "../style.css"
 import React from 'react'
+import { Outlet, Route, Routes } from 'react-router-dom';
 import AboutSection from '../Components/AboutSection'
 import BlogPost from '../Components/BlogPost'
 import FeautureSection from '../Components/FeautureSection'
@@ -14,12 +15,14 @@ import TeamSection from '../Components/TeamSection'
 
 import "../assets/css/search.css"
 import ProductSection from "../Components/ProductSection"
+import ViewProduct from "../Components/ViewProduct";
 function ProductScreen() {
   return (<>
     <Navbar></Navbar>
+    <Outlet></Outlet>
     {/* <HeroSection></HeroSection>
     <AboutSection></AboutSection> */}
-    <ProductSection></ProductSection>
+
     {/* <FeautureSection></FeautureSection> */}
     {/* <TeamSection></TeamSection> */}
     {/* <ReviewSection></ReviewSection> */}
