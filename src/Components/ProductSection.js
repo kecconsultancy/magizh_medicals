@@ -14,7 +14,7 @@ function ProductSection() {
   // const [ShowData, setShowData] = useState(false)
   useEffect(() => {
     // console.log(image);
-    if (MasterCopy.length == 0) {
+    if (MasterCopy.length === 0) {
       getData()
     }
     // console.log(MasterCopy, Tags);
@@ -41,7 +41,7 @@ function ProductSection() {
 
     const ref = collection(db, "products");
 
-    const temp = await getDocs(ref).then(snap => {
+    await getDocs(ref).then(snap => {
 
       snap?.forEach((el) => {
 
@@ -72,7 +72,7 @@ function ProductSection() {
 
 
   const changeData = (tag) => {
-    const TempData = MasterCopy.filter(el => el.id == tag)[0]
+    const TempData = MasterCopy.filter(el => el.id === tag)[0]
     const data = GetDataFromMaster(TempData)
     console.log(data);
     setDataShow(data);
