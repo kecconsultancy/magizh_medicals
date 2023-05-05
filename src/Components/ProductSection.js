@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import MenusCard from './MenusCard';
-import { collection, getDocs, doc, updateDoc } from "firebase/firestore";
+import { collection, getDocs } from "firebase/firestore";
 import { db } from '../firebase';
-import { image } from '../images';
+// import { image } from '../images';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -11,7 +11,7 @@ function ProductSection() {
   const [MasterCopy, setMasterCopy] = useState([])
   const [Tags, setTag] = useState([]);
   const [DataShow, setDataShow] = useState([])
-  const [ShowData, setShowData] = useState(false)
+  // const [ShowData, setShowData] = useState(false)
   useEffect(() => {
     // console.log(image);
     if (MasterCopy.length == 0) {
@@ -38,6 +38,7 @@ function ProductSection() {
 
   const getData = async () => {
 
+
     const ref = collection(db, "products");
 
     const temp = await getDocs(ref).then(snap => {
@@ -57,7 +58,7 @@ function ProductSection() {
       });
 
       // console.log("snap");
-      setShowData(true)
+      // setShowData(true)
       const data = GetDataFromMaster(MasterCopy[0])
       // console.log("sdsd", data);
       setDataShow(data);

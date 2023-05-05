@@ -4,7 +4,7 @@ import "../assets/css/content.css"
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 function ViewProduct(props) {
-  const [data, setdata] = useState({})
+  // const [data, setdata] = useState({})
   const [ShowData, setShowData] = useState({})
   const { id, tag } = useParams()
   const getData = async (docRef) => {
